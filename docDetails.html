@@ -1,0 +1,210 @@
+
+
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+    crossorigin="anonymous"
+    />
+
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@2.1.0/dist/css/swiffy-slider.css" 
+    rel="stylesheet" 
+    crossorigin="anonymous">
+
+</head>
+
+<body>
+
+<!-- nav start -->
+    <nav class="d-flex justify-content-around align-items-center p-4">
+        <div class="logo-container d-flex align-items-center gap-2">
+           <img src="images/pic5.png" alt="" width="80px"/>
+           <h3>SmartCare</h3>
+        </div>
+
+        <div class="menu-container d-flex gap-3">
+            <li class="menu">Home</li>
+            <li class="menu">Service</li>
+            <li class="menu">Contact Us</li>
+            <li class="menu">Login</li>
+        </div>
+    </nav>
+<!-- nav end  -->
+
+<!-- particular doctor details start  -->
+
+<div id="doc-details" >
+
+     
+
+    
+    
+</div>
+
+<!-- particular doctor details end  -->
+
+
+
+
+<!-- particuler doc review start -->
+
+<div class="review-container p-3 mt-5 w-75 m-auto" >
+        <h1 class="title">Clients Review</h1>
+        <p> 
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore
+        </p>
+
+        <div class="reviews">
+            <div class="swiffy-slider slider-item-show2 slider-item-reveal slider-nav-outside slider-nav-round slider-nav-visible slider-indicators-outside slider-indicators-round slider-indicators-dark slider-nav-animation slider-nav-animation-fadein slider-item-first-visible">
+                
+                    <ul id="doc-details-review" class="slider-container py-4">
+
+
+
+                    </ul>
+
+                    <button type="button" class="slider-nav" aria-label="Go left"></button>
+                    <button type="button" class="slider-nav slider-nav-next" aria-label="Go left"></button>
+
+                    <div class="slider-indicators">
+                        <button class="active" aria-label="Go to slide"></button>
+                        <button aria-label="Go to slide"></button>
+                        <button aria-label="Go to slide"></button>
+                        <button aria-label="Go to slide"></button>
+                        <button aria-label="Go to slide" class=""></button>
+                    </div>
+            </div>
+        
+      </div>
+</div>
+
+
+
+<!-- particuler doc review end -->
+
+
+<!-- model area start -->
+
+<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    
+    <div class="modal-content">
+      <div class="modal-header">
+
+        <h1 class="modal-title fs-5" 
+         id="exampleModalLabel">Submit your info</h1>
+        
+        <button type="button" 
+          class="btn-close" 
+          data-bs-dismiss="modal" 
+          aria-label="Close">
+        </button>
+     </div>
+
+    <div class="modal-body">
+        
+        <input type="radio" name="status" value="Offline">Offline 
+        <input type="radio" name="status" value="Online">Online<br/>
+        <input id="symptom" type="text" placeholder="Type Your system"/> 
+         
+           
+          <select  id="time-container" class="p-2 mt-2" name="time" id="time">
+               
+            <!-- <option value="none" selected> available Time</option>
+                <option value="male">male</option>
+                <option value="female">female</option>
+                <option value="other">other</option> -->
+           
+            </select>
+      
+    </div>
+       
+    <div class="modal-footer">
+         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+         <button onclick="handleAppointment()" class="btn btn-primary">Take Apointment</button>
+     </div>
+    
+    </div>
+  </div>
+</div>
+
+
+<!-- model area end  -->
+
+
+<!-- footer start -->
+<footer class="p-5" >
+  <div class="container w-75 m-auto row p-5">
+    <div class="col-md-6">
+        <p>
+            <small>
+                Copyright 0 Smartcare.All Right Reserved/
+            </small>
+        </p>
+        <h5>Follow US</h5>
+        <div class="icons">
+            <img class="icon" src="images/pic10.png" alt="" width="60px" height="60px" />
+            <img class="icon" src="images/pic12.webp" alt="" width="60px" height="60px"/>
+            <img class="icon" src="images/pic10.png" alt="" width="60px" height="60px"/>
+        </div>
+   
+    </div>
+
+    <div class="col-md-3"> 
+       
+        <h5>Company</h5>
+        <li>About</li>
+        <li>Contact</li>
+        <li>Culture</li>
+        <li>Blog</li>   
+    </div>
+
+    <div class="col-md-3"> 
+          
+        <h5>Company</h5>
+        <li>About</li>
+        <li>Contact</li>
+        <li>Culture</li>
+        <li>Blog</li>   
+
+
+    </div>
+   
+</div>
+ <hr>
+    <p class="text-center mt-5"> 
+        <small>Copyright 0 Smartcare. All Right Reserved</small>
+    </p>
+</footer>
+<!-- footer end -->
+
+<script src="./app.js"></script>
+<script src="./docDetails.js"></script>
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    >
+</script>
+  
+
+<script type="module">
+    
+    import { swiffyslider } from 'https://cdn.jsdelivr.net/npm/swiffy-slider@2.1.0/dist/js/swiffy-slider.js';
+    window.addEventListener('load', () => swiffyslider.init());
+
+</script>
+   
+</body>
+</html>

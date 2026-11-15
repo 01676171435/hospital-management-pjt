@@ -1,0 +1,199 @@
+ 
+* {
+    box-sizing: border-box;
+}
+
+
+    
+
+ .main-container {
+    
+    width: 1000px; 
+    margin: 0 auto;  
+    background-color:rgb(224, 211, 211) ; 
+
+}  
+
+
+/* nav start */
+li{
+    list-style: none;
+}
+
+nav{
+    background-color: aqua;
+   
+}
+
+.menu{
+    font-size: 20px;
+}
+
+.menu:hover{
+    color:white;
+    cursor: pointer;
+} 
+
+/* nav end */
+
+/* banner start */
+
+.banner-container{
+   
+   width: 900px;
+   margin: 0 auto;    
+   
+
+}
+
+.banner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    height: 350px;
+    background: linear-gradient(cyan,khaki);
+    box-shadow: 4px 4px 8px gray; 
+    border-radius: 10px;
+    text-align: center;
+}
+
+.banner-left{
+    width:600px
+}
+/* banner end */
+
+/* service start */
+.service-container{
+    margin-top:50px
+}
+.title{
+    font-size: 44px;
+    color:aqua;
+}
+
+/* service end */
+
+
+
+
+/* doctor section start */
+ 
+.doctors-container{
+    margin-top:50px;
+    padding:30px;
+}
+
+.doc-card{
+
+    width:300px;
+    height:360px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px gray;
+}
+
+.doc-img{
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+   
+}
+
+#search{
+    padding:10px;
+    border: none;
+    
+}
+
+.nodata{
+    display: none;
+}
+
+.nodata img{
+    width:150px;
+    height:150px;
+}
+
+#spinner{
+    display: none;
+}
+/* doctor section end */
+
+
+
+/* review start */
+
+.review-card{
+    width:250px;
+    height:300px;
+    box-shadow: 4px 4px 8px gray;
+    border-radius:10px;
+    text-align: center;
+    padding: 10px;
+
+}
+
+.review-card img{
+    width:70px;
+    height:70px;
+    border-radius: 50px;
+}
+/* review end */
+
+
+
+
+/* footer start */
+footer{
+
+    padding:50px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+
+/* footer end  */
+
+
+/* particular doctor details start   */
+
+.doc-details-container{
+         display: flex;
+         justify-content: space-around;
+         padding:30px;
+         gap: 50px;
+         width: 75%;
+         margin: auto;
+
+}
+.doctor-img img{
+    width:100px;
+    height:100px;
+    border-radius:50px
+}
+
+.doc-details-btn{
+
+    border:none;
+    padding: 5pxpx 10px;
+    background-color: gray;
+    color: white;
+    border-radius: 5px;
+}
+
+/* particular doctor details end   */
+ 
+
+/* particular doctor review start */
+
+/* .review-card{
+    width:250px;
+    height:300px;
+    box-shadow: 4px 4px 8px gray;
+    border-radius:10px;
+    text-align: center;
+    padding: 10px;
+
+} */
+
+ /* particuler doc review end */

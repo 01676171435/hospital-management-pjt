@@ -1,0 +1,139 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+   
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+    crossorigin="anonymous"
+    />
+
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@2.1.0/dist/css/swiffy-slider.css" 
+    rel="stylesheet" 
+    crossorigin="anonymous"
+    />
+
+</head>
+<body>
+    
+     <!-- nav start -->
+    <nav class="d-flex justify-content-around align-items-center p-4">
+        <div class="logo-container d-flex align-items-center gap-2">
+           <img src="images/pic5.png" alt="" width="80px"/>
+           <h3>SmartCare</h3>
+        </div>
+
+        <div class="menu-container d-flex gap-3">
+            <li class="menu"><a href="index.html">Home</a></li>
+            <li class="menu">Service</li>
+            <li class="menu">Contact Us</li>
+            <li class="menu"> <a target="_blank" href="login.html"> Login </a> </li>
+        </div>
+    </nav>
+    <!-- nav end  -->
+   
+   <!-- login part start -->
+    
+
+<div class="login-container">
+         
+             <div class="col-md-6 ">
+                   <h1 class="title mt-5">Please Registration</h1>
+                    <p id="error"></p>
+                   <form action="" onsubmit="handleRegistration(event)" >   
+                    
+                      <input id="username"  type="text" class="input" placeholder="UserName" required/>
+                      <input id="first_name"  type="text" class="input" placeholder="First Name" required/>
+                      <input id="last_name"  type="text" class="input" placeholder="Last Name" required/>
+                      <input id="email"  type="email" class="input" placeholder="Email" required/>
+                      <input id="password"  type="password" class="input" placeholder="Password" required/>
+                      <input id="confirm_password" type="password" class="input" placeholder="Confirm Password" required/>
+                      <input type="submit" class="submit-btn" value="Registration"/>
+                      <p> <a href="login.html">go to Login page</a> </p>
+                   
+                    </form>
+                </div>
+               
+             
+                <div class="col-md-6 ">
+                     
+                    <img class="w-100" src="images/signup.png" alt="">
+                
+                </div>
+        
+
+</div>
+ <!-- login part end  -->
+
+<!-- footer start -->
+<footer class="p-5" >
+  <div class="container w-75 m-auto row p-5">
+    <div class="col-md-6">
+        <p>
+            <small>
+                Copyright 0 Smartcare.All Right Reserved/
+            </small>
+        </p>
+        <h5>Follow US</h5>
+        <div class="icons">
+            <img class="icon" src="images/pic10.png" alt="" width="60px" height="60px" />
+            <img class="icon" src="images/pic12.webp" alt="" width="60px" height="60px"/>
+            <img class="icon" src="images/pic10.png" alt="" width="60px" height="60px"/>
+        </div>
+   
+    </div>
+
+    <div class="col-md-3"> 
+       
+        <h5>Company</h5>
+        <li>About</li>
+        <li>Contact</li>
+        <li>Culture</li>
+        <li>Blog</li>   
+    </div>
+
+    <div class="col-md-3"> 
+          
+        <h5>Company</h5>
+        <li>About</li>
+        <li>Contact</li>
+        <li>Culture</li>
+        <li>Blog</li>   
+
+
+    </div>
+   
+</div>
+ <hr>
+    <p class="text-center mt-5"> 
+        <small>Copyright 0 Smartcare. All Right Reserved</small>
+    </p>
+</footer>
+<!-- footer end -->
+
+
+<script src="./app.js"></script>
+<script src="./docDetails.js"></script>
+<script src="./auth.js"></script>
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    >
+</script>
+  
+
+<script type="module">
+    
+    import { swiffyslider } from 'https://cdn.jsdelivr.net/npm/swiffy-slider@2.1.0/dist/js/swiffy-slider.js';
+    window.addEventListener('load', () => swiffyslider.init());
+
+</script>
+</body>
+</html>
